@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+  {{article.title}}
+{% endblock title %}
+
+{% block content %}
+  <div id="post" class="features">
+    <h1>{{article.title}}</h1>
+    <p id='date'>{{article.date}}</p>
+    <p id='full_text'>{{article.full_text}}</p>
+    <a href="{% url 'users:profile' article.owner.id %}" style="text-decoration: none;"><p id='owner'>{{article.owner}}</p></a>
+    <a href="{% url 'news:news_delete' article.id %}" class="btn btn-danger">Delete</a>
+    <a href="{% url 'news:news_update' article.id %}" class="btn btn-info">Edit</a>
+  </div>
+{% endblock content %}

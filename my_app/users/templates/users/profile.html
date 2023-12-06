@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Profile of {{ user.username }}
+{% endblock title %}
+
+{% block content %}
+  <div class="profile">
+    <h2>Profile of {{ user.username }}</h2>
+    <p><strong>Username:</strong> {{ user.username }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+
+    <!-- Дополнительные поля профиля, которые могут быть добавлены -->
+    <p><strong>First Name:</strong> {{ user.first_name }}</p>
+    <p><strong>Last Name:</strong> {{ user.last_name }}</p>
+
+    <!-- Пример вывода информации из профиля пользователя, если используется дополнительная модель профиля -->
+    {% if user.profile %}
+      <p><strong>About Me:</strong> {{ user.profile.about_me }}</p>
+      <p><strong>Interests:</strong> {{ user.profile.interests }}</p>
+    {% endif %}
+  </div>
+{% endblock content %}

@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #2c2c2c;
+}
+
+aside {
+  position: fixed;
+  float: left;
+  background: #181818;
+  width: 20%;
+  padding: 2.5%;
+  height: 100vh;
+  color: #fff;
+  border-right: 5px solid #4d4d4d;
+
+}
+
+aside img {
+  width: 90%;
+  float: left;
+  margin-left: 5%;
+}
+
+aside .logo {
+  font-size: 2.5vw;
+  margin-left: 10px;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+}
+
+aside h3 {
+  margin-top: 25%;
+  margin-left: 10%;
+  font-size: 1.8vw;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  font-size: 0.9vw;
+  color: #fff;
+  display: block;
+  margin-top: 7%;
+  margin-left: 10%;
+  transition: transform .6s ease;
+}
+
+#mybtn1, #mybtn2, #mybtn3, #mybtn4 {
+  font-size: 0.9vw;
+  margin-top: 4%;
+  margin-left: 0%;
+}
+
+aside ul li:hover, aside ul a:hover {
+  color: red;
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+main .features {
+  float: left;
+  color: #fff;
+  margin-top: 100px;
+  text-align: center;
+  width: 75%;
+  margin-left: 22%;
+  position: relative;
+}
+
+main .features h1 {font-size: 50px; text-align:center;}
+main .features p {max-width: 400px; margin: 20px auto;}
+
+.alert-warning {
+  float: left;
+  clear: both;
+  width: 40%;
+  margin: 20px 30%;
+  text-align: left;
+}
+
+form {
+  margin-left: 28%;
+  width: 45%;
+  margin-top: 50px;
+}
+
+#post {
+  border: 2px solid #472008;
+  background-color: #ffecb5;
+  padding: 20px;
+}
+
+#post h1 {
+  color: #472008;
+  border-bottom: 2px solid #472008;
+  padding-bottom: 10px;
+}
+
+#post p {
+  color: #472008;
+}
+
+#post a.btn {
+  margin-top: 10px;
+}
+
+#full_text {
+  color: #472008;
+  font-size: 1vw;
+  max-width: 80%;
+  white-space: pre-line;
+  text-align: justify;
+}
+
+.profile {
+  float: left;
+  width: 30%;
+  margin-top: 5%;
+  text-align: left;
+  padding: 20px;
+  background-color: #ffecb5;
+  border-radius: 8px;
+  margin-left: 45%;
+  position: relative;
+}
+
+.profile h2 {
+  color: #291407;
+  border-bottom: 2px solid #472008;
+  padding-bottom: 10px;
+}
+
+.profile p {
+  margin-top: 10px;
+}
+
+.profile strong {
+  color: #291407;
+}
