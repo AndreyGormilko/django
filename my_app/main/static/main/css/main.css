@@ -27,7 +27,7 @@ aside img {
 
 aside .logo {
   font-size: 2.5vw;
-  margin-left: 10px;
+  margin-left: 4.2vw;
   font-weight: bold;
   position: relative;
   top: -5px;
@@ -76,7 +76,7 @@ main .features {
   position: relative;
 }
 
-main .features h1 {font-size: 50px; text-align:center;}
+main .features h1 {font-size: 3.8vw; text-align:center;}
 main .features p {max-width: 400px; margin: 20px auto;}
 
 .alert-warning {
