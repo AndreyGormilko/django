@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#(o0yqftc@hvlyvw*6=#zce304i9h=6j-$o!j%svc2v5t71=ui
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['45.95.173.217']
+ALLOWED_HOSTS = ['newspaperproject.pp.ua', 'www.newspaperproject.pp.ua', '45.95.173.217']
 
 
 # Application definition
@@ -114,9 +114,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
+STATICFILES_DIRS = []
+STATIC_ROOT = BASE_DIR / "static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -124,3 +123,15 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = '/users/login/'
+
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
+SECURE_SSL_CERTIFICATE = "/etc/letsencrypt/live/newspaperproject.pp.ua/fullchain.pem"
+SECURE_SSL_KEY = "/etc/letsencrypt/live/newspaperproject.pp.ua/privkey.pem"
+
+SECURE_SSL_CA_CERTIFICATE = "/etc/letsencrypt/live/newspaperproject.pp.ua/chain.pem"
+
+USE_X_FORWARDED_PORT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
