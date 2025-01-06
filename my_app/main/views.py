@@ -7,10 +7,8 @@ from django.views.decorators.http import require_POST
 
 # Create your views here.
 
-@login_required
 def index(request):
     return render(request, 'main/index.html')
 
-@login_required
 def about(request):
     return render(request, 'main/about.html')
