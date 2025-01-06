@@ -7,7 +7,6 @@ from django.http import Http404
 
 # Create your views here.
 
-@login_required
 def news_home(request):
     news = Articles.objects.order_by('-date')
     return render(request, 'news/news_home.html', {'news': news})
